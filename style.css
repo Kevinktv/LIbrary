@@ -1,0 +1,147 @@
+@keyframes cometop{
+    from{top: -1000px; opacity: 0;}
+    to{top: 0px; opacity: 1;}
+}
+
+header{
+    font-size: 2em;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#add-book{
+    display: block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    padding: 15px;
+    margin: auto auto;
+    border: 3px solid red;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#add-book:hover{
+    background-color: red;
+    color: white;
+}
+
+table{
+    border-collapse: collapse;
+    overflow-x: auto;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+th{
+    background-color: #04AA6D;
+    color: white;
+    font-size: 1.4em;
+}
+
+th, td{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+#modal{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    width: 50%;
+    text-align: center;
+}
+
+.modal-content{
+    position: relative;
+    animation-name: cometop;
+    animation-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+.modal-body {
+    padding: 2px 16px;
+    background-color: white;
+}
+
+
+.modal-header h1{
+    font-size: 3em;
+}
+
+#close{
+    float: right;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+#close:hover, #close:focus{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form label{
+    font-size: 2em;
+}
+
+form input{
+    font-size: 1.5em;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.del{
+    /* Class for delete icons */
+    background-color: #e4e4e4;
+    border: 1px solid black;
+
+}
+
+.del:hover{
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+.change{
+    /* Class for change read status */
+    background-color: #e4e4e4;
+    border: 1px solid black;
+}
+
+.change:hover{
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+#subm{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 3px solid #5cb85c;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+ 
+#subm:hover{
+    background-color: #5cb85c;
+    color: white;
+}

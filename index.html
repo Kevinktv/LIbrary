@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href="style.css">
+        <title>
+            Library
+        </title>
+        <body>
+            <header><h1>My Library</h1></header>
+            <button id='add-book'>Add a new book!</button>
+            <div id='modal'>
+                <div class='modal-content'>
+                <span id='close'>&times;</span>
+                <div class='modal-header'>
+                    <h1>Add a new book!</h1>
+                </div>
+                <div class='modal-body'>
+                <form onsubmit="return false" name='myForm'>
+                    <label for='book-name'>Book name:</label><br>
+                    <input type='text' name='book-name' id='book-name'><br>
+                    <label for='author-name'>Author name:</label><br>
+                    <input type='text' name='author-name' id='author-name'><br>
+                    <label for='pages' >Pages:</label><br>
+                    <input type='text' name='pages' id='pages'><br>
+                    <label for='read'>Read:</label><br>
+                    <input type='radio' name='read' id='yes' value='yes' checked> <span style='font-size: 1.4em;'>Yes</span>
+                    <input type='radio' name='read' id='no' value='no'> <span style='font-size: 1.4em;'>No</span>
+                    <br>
+                    <input type='submit' id='subm'>
+
+                </form>
+                </div>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+            
+            <script src='script.js'></script>
+        </body>
+    </head>
+</html>
